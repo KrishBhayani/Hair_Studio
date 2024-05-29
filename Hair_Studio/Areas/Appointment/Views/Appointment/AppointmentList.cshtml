@@ -1,0 +1,116 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using System.Data;
+@model DataTable;
+
+<main id="main" class="main">
+    <section class="section">
+        <div class="container-fluid d-flex justify-content-between">
+            <h3 class="fw-bold p-2"> Feedback List</h3>
+            <a type="button" class="btn btn-success" style="height: fit-content;align-self: center;" asp-area="Appointment" asp-controller="Appointment" asp-action="AppointmentAdd">
+                Add Appointment
+            </a>
+        </div>
+        <div>&nbsp;</div>
+        <div class="container-fluid border border-dark p-4">
+            <form class="row">
+                <div><h3>Filter</h3></div>
+
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="col-6">
+                    <input type="text" placeholder="Appointment" class="form-control mt-2" id="inputAddress">
+                </div>
+                <div class="col-10 my-3">
+                    <form>
+                        <button type="submit" class="btn btn-danger" runat="server" OnClientClick="this.form.reset();return false;">Clear</button>
+                    </form>
+                </div>
+            </form>
+        </div>
+        <div>&nbsp;</div>
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <i class="bi bi-check-circle me-1"></i>
+                @TempData["SuccessMessage"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+    </section>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Appointments</h5>
+
+            <!-- Table with hoverable rows -->
+            <table class="table table-hover">
+                <thead id="sample_2">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Email</th>
+                        @*<th scope="col">Select</th>*@
+                        @*<th scope="col">Delete</th>*@
+                    </tr>
+                </thead>
+                @foreach (DataRow dataRow in Model.Rows)
+                {
+                    <tbody>
+                        <tr>
+                            <th scope="row">@dataRow["Name"]</th>
+                            <td>@DateTime.Parse(dataRow["AppointmentDate"].ToString()).ToString("yyyy-MM-dd")</td>
+                            <td>@DateTime.Parse(dataRow["AppointmentTime"].ToString()).ToString("HH:mm:ss")</td>
+                            <td>@dataRow["Phone"]</td>
+                            <td>@dataRow["Email"]</td>
+                            @*<td>@dataRow["ServiceName"]</td>*@
+                            @*<td><a href="@Url.Action("FeedbackDelete", "Feedback", new { FeedbackID = @dataRow["FeedbackID"] })" class="btn btn-danger" onclick="return fun1();"><i class="bx bx-trash"></i></a></td>*@
+                        </tr>
+                    </tbody>
+
+                }
+
+            </table>
+            <!-- End Table with hoverable rows -->
+
+        </div>
+    </div>
+
+</main>
+
+@section Scripts
+    {
+    <script>$(document).ready(function () {
+            $("#sample_1").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#sample_2 tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+        function fun1() {
+            if (confirm("Are you sure you want to delete?")) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }</script>
+
+    <script>$(document).ready(function () {
+            $("#inputAddress").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#sample_2 tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });</script>
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,140 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using System.Data;
+@model DataTable;
+
+<main id="main" class="main">
+    <section class="section faq" >
+        <div class="container-fluid d-flex justify-content-between">
+            <h3 class="fw-bold p-2"> FAQs List</h3>
+            <a type="button" class="btn btn-success" style="height: fit-content;align-self: center;" asp-area="Service" asp-controller="Service" asp-action="ServiceAdd">
+                Add FAQ
+            </a>
+        </div>
+        <div class="container-fluid border border-dark p-4">
+            <form class="row">
+                <div><h3>Filter</h3></div>
+
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="col-6">
+                    <input type="text" placeholder="FAQ" class="form-control mt-2" id="inputAddress">
+                </div>
+                <div class="col-10 my-3">
+                    <form>
+                        <button type="submit" class="btn btn-danger" runat="server" OnClientClick="this.form.reset();return false;">clear</button>
+                    </form>
+                </div>
+            </form>
+        </div>
+        <div>&nbsp;</div>
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <i class="bi bi-check-circle me-1"></i>
+                @TempData["SuccessMessage"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+        <div>&nbsp;</div>
+        <div class="card" id="sample_2">
+        <div class="card-body">
+            <h5 class="card-title">FAQs</h5>
+
+            @*<div class="accordion accordion-flush" id="faq-group-2">
+                    @foreach (DataRow dataRow in Model.Rows)
+                    {
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-target="#faqsTwo-1" type="button" data-bs-toggle="collapse">
+                                    <p class="card-text fw-bold fs-4">@dataRow["Question"]</p>
+                                </button>
+
+                            </h2>
+                            <div id="faqsTwo-1" class="accordion-collapse collapse" data-bs-parent="#faq-group-2">
+                                <div class="accordion-body">
+                                    <p class="card-text font-size: medium">@dataRow["Answer"]</p>
+                                </div>
+                            </div>
+                            <div id="faqsTwo-1" class="accordion-collapse collapse" data-bs-parent="#faq-group-2">
+                                <div class="accordion-body">
+                                    <a href="@Url.Action("FAQsAdd", "FAQs", new { FAQID = @dataRow["FAQID"] })" class="btn btn-success">Edit</a>
+                                    <a href="@Url.Action("FAQsDelete", "FAQs", new { FAQID = @dataRow["FAQID"] })" class="btn btn-danger onclick="return fun1();">Delete</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    }*@
+            @foreach (DataRow dataRow in Model.Rows)
+            {
+                <div class="col-12">
+
+                    <div class="card basic">
+                        <div class="card-body">
+                            @*<h5 class="card-title">Basic Questions</h5>*@
+                            <br />
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>@dataRow["Question"]</h6>
+                                </div>
+                                <div class="col-md-6 text-end">
+                                    <a href="@Url.Action("FAQsDelete", "FAQs", new { FAQID = @dataRow["FAQID"] })" class="btn btn-danger" onclick="return fun1();"><i class="bx bx-trash"></i></a>
+                                    <a href="@Url.Action("FAQsAdd", "FAQs", new { FAQID = @dataRow["FAQID"] })" class="btn btn-success"><i class="bi bi-pen"></i></a>
+                                            
+                                </div>
+                            </div>
+
+                            <div>
+                                <p>@dataRow["Answer"]</p>
+                                @*<a href="@Url.Action("FAQsDelete", "FAQs", new { FeedbackID = @dataRow["FAQID"] })" class="btn btn-danger" onclick="return fun1();"><i class="ri-edit-2-line"></i></a>*@
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            }
+            @*</div>*@
+        </div>
+        </div>
+    </section>
+</main>
+
+@section Scripts
+    {
+    <script>$(document).ready(function () {
+            $("#sample_1").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#sample_2 tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+        function fun1() {
+            if (confirm("Are you sure you want to delete?")) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }</script>
+
+    <script>$(document).ready(function () {
+            $("#inputAddress").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#sample_2 div").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });</script>
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

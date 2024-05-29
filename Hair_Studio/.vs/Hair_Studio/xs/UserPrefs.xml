@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{417E7FB7-A08B-42E8-83C9-4E06296CFBE9}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Hair__Studio PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Areas/Feedback/Views/FeedBack/FeedbackAddEdit.cshtml">
+    <Files>
+      <File FileName="BAL/CheckAccess.cs" Line="1" Column="1" />
+      <File FileName="Areas/Appointment/Views/Appointment/AppointmentAddEdit.cshtml" Line="1" Column="1" />
+      <File FileName="Areas/Feedback/Views/FeedBack/FeedbackAddEdit.cshtml" Line="8" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Hair_Studio" expanded="True">
+            <Node name="Hair_Studio" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Areas" expanded="True">
+                <Node name="Appointment" expanded="True" />
+                <Node name="Feedback" expanded="True">
+                  <Node name="Views" expanded="True">
+                    <Node name="FeedBack" expanded="True">
+                      <Node name="FeedbackAddEdit.cshtml" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="BAL" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

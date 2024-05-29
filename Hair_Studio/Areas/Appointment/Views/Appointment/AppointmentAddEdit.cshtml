@@ -1,0 +1,129 @@
+﻿@using Hair_Studio.Areas.Appointment.Models;
+@model AppointmentModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*<form class="appointment-form" method="post" asp-area="Appointment" asp-controller="Appointment" asp-action="AppointmentSave">
+
+    <section class="ftco-section ftco-booking bg-light">
+        <div class="container ftco-relative">
+            <div class="row justify-content-center pb-3">
+                <div class="col-md-10 heading-section text-center ftco-animate">
+                    <span class="subheading">Booking</span>
+                    <h2 class="mb-4">Make an Appointment</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+            </div>
+            <h3 class="vr">Call Us: 012-3456-7890</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-10 ftco-animate">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" asp-for="Name" class="form-control" id="appointment_name" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" asp-for="Email" class="form-control" id="appointment_email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="date" asp-for="AppointmentDate" class="form-control appointment_date" placeholder="Date">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="time" asp-for="AppointmentTime" class="form-control appointment_time" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <div class="select-wrap">
+                                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                    <select name="" id="" class="form-control" asp-for="ServiceID" asp-items="@(new SelectList(ViewBag.ServiceList,"ServiceID","ServiceName"))">
+                                        <option selected>Select Service</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" asp-for="Phone" class="form-control" id="phone" placeholder="Phone">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" asp-area="Appointment" asp-controller="Appointment" asp-action="AppointmentSave">Make an Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</form>*@
+<main id="main" class="main">
+    <h1><u><b>Add/Edit Appointment</b></u></h1>
+    <br />
+
+
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Stylist Form</h5>
+
+            <!-- No Labels Form -->
+            <form class="row g-3" method="post" asp-area="Appointment" asp-controller="Appointment" asp-action="AppointmentSave">
+                @Html.HiddenFor(x => x.AppointmentID)
+                <div class="col-md-6">
+                    <input type="text" asp-for="Name" class="form-control" placeholder="Name " />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" asp-for="Email" class="form-control" placeholder="Email " />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="date" asp-for="AppointmentDate" class="form-control" placeholder="Date " />
+                    <span asp-validation-for="AppointmentDate" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="time" asp-for="AppointmentTime" class="form-control" placeholder="Time " />
+                    <span asp-validation-for="AppointmentTime" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <select class="form-select" asp-for="ServiceID" asp-items="@(new SelectList(ViewBag.ServiceList,"ServiceID","ServiceName"))">
+                        <option disabled>Professional Makeup</option>
+                    </select>
+                    <span asp-validation-for="ServiceID" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" asp-for="Phone" class="form-control" placeholder="Phone " />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="text-center">
+                    <div>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <a class="btn btn-danger" asp-area="Appointment" asp-controller="Appointment" asp-action="AppointmentList">Back</a>
+                    </div>
+                </div>
+            </form><!-- End No Labels Form -->
+
+        </div>
+    </div>
+</main>
+
+@section Scripts
+    {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,25 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Hair_Studio
+build_property.RootNamespace = Hair_Studio
+build_property.ProjectDir = /Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/LENOVO/Desktop/Hair_Studio/Hair_Studio
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/\*\*/\*.razor]
+build_metadata.AdditionalFiles.TargetPath = KiovKi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/\*\*/\*.cshtml]
+build_metadata.AdditionalFiles.TargetPath = KiovKi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

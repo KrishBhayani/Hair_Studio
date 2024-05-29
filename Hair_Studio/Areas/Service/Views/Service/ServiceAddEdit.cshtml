@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewData["Title"] = "Service Add/Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@model Hair_Studio.Areas.Service.Models.ServiceModel
+
+<main id="main" class="main">
+    <h1><u><b>Add/Edit Service</b></u></h1>
+    <br />
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Service Form</h5>
+
+            <!-- Vertical Form -->
+            <form class="row g-3" method="post" asp-area="Service" asp-controller="Service" asp-action="ServiceSave" enctype="multipart/form-data">
+                @Html.HiddenFor(x => x.ServiceID)
+                @Html.HiddenFor(y => y.ImageURL)
+                <div class="col-12">
+                    <input type="text" asp-for="ServiceName" class="form-control" placeholder="Service Name " />
+                    <span asp-validation-for="ServiceName" class="text-danger"></span>
+                </div>
+                <div class="col-12">
+                    <input type="text" asp-for="Description" class="form-control" placeholder="Service Description" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="col-12">
+                    <input type="text" asp-for="Price" class="form-control" placeholder="Service Price " />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                @*<div class="col-12">
+                    <input type="text" asp-for="ImageURL" class="form-control" placeholder="Select an Image" />
+                    <span asp-validation-for="ImageURL" class="text-danger"></span>
+                </div>*@
+                <div class="col-12">
+                    <input type="file" name="ServiceImage" class="form-control mb-2" accept=".png, .jpg, .jpeg" asp-for="ServiceImage" />
+                    <span asp-validation-for="ServiceImage" class="text-danger"></span>
+                </div>
+                <br />
+                <div>
+
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <a class="btn btn-danger" asp-area="Service" asp-controller="Service" asp-action="ServiceList">Back</a>
+                </div>
+            </form><!-- Vertical Form -->
+
+        </div>
+    </div>
+
+
+
+</main>
+
+
+@section Scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

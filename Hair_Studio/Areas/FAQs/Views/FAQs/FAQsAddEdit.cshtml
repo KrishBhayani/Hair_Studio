@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "FAQs Add/Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@model Hair_Studio.Areas.FAQs.Models.FAQsModel
+
+<main id="main" class="main">
+    <h1><u><b>Add/Edit FAQs</b></u></h1>
+    <br />
+
+    <form method="post" asp-area="FAQs" asp-controller="FAQs" asp-action="FAQsSave">
+        @Html.HiddenFor(x => x.FAQID)
+        @*<div asp-validation-summary="All" class="text-danger"></div>*@
+        <div class="form-group">
+            <label>Question</label>
+            <input type="text" asp-for="Question" class="form-control" placeholder="Enter Question" />
+            <span asp-validation-for="Question" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label>Answer</label>
+            <input type="text" asp-for="Answer" class="form-control" placeholder="Enter Answer" />
+            <span asp-validation-for="Answer" class="text-danger"></span>
+        </div>
+
+
+        <br />
+        <div>
+
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a class="btn btn-danger" asp-area="FAQs" asp-controller="FAQs" asp-action="FAQsList">Back</a>
+        </div>
+
+    </form>
+</main>
+
+@section Scripts
+    {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

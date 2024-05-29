@@ -1,0 +1,114 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\assets2\" />
+    <Content Remove="wwwroot\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\Service\" />
+    <Folder Include="Areas\Stylist\" />
+    <Folder Include="Areas\Appointment\" />
+    <Folder Include="Areas\Feedback\" />
+    <Folder Include="Areas\FAQs\" />
+    <Folder Include="DAL\" />
+    <Folder Include="DAL\Appointment\" />
+    <Folder Include="DAL\FAQs\" />
+    <Folder Include="DAL\Feedback\" />
+    <Folder Include="DAL\Service\" />
+    <Folder Include="DAL\Stylist\" />
+    <Folder Include="Areas\Appointment\Models\" />
+    <Folder Include="Areas\Appointment\Views\" />
+    <Folder Include="Areas\Appointment\Controllers\" />
+    <Folder Include="Areas\FAQs\Models\" />
+    <Folder Include="Areas\FAQs\Views\" />
+    <Folder Include="Areas\FAQs\Controllers\" />
+    <Folder Include="Areas\Feedback\Models\" />
+    <Folder Include="Areas\Feedback\Views\" />
+    <Folder Include="Areas\Feedback\Controllers\" />
+    <Folder Include="Areas\Service\Models\" />
+    <Folder Include="Areas\Service\Views\" />
+    <Folder Include="Areas\Service\Controllers\" />
+    <Folder Include="Areas\Stylist\Models\" />
+    <Folder Include="Areas\Stylist\Views\" />
+    <Folder Include="Areas\Stylist\Controllers\" />
+    <Folder Include="Areas\Service\Views\Service\" />
+    <Folder Include="Areas\Stylist\Views\Stylist\" />
+    <Folder Include="Areas\FAQs\Views\FAQs\" />
+    <Folder Include="Areas\SEC_User\" />
+    <Folder Include="Areas\SEC_User\Models\" />
+    <Folder Include="Areas\SEC_User\Views\" />
+    <Folder Include="Areas\SEC_User\Controllers\" />
+    <Folder Include="Areas\SEC_User\Views\SEC_User\" />
+    <Folder Include="DAL\SEC_User\" />
+    <Folder Include="Areas\SEC_Admin\" />
+    <Folder Include="Areas\SEC_Admin\Models\" />
+    <Folder Include="Areas\SEC_Admin\Views\" />
+    <Folder Include="Areas\SEC_Admin\Controllers\" />
+    <Folder Include="Areas\SEC_Admin\Views\SEC_Admin\" />
+    <Folder Include="Areas\Feedback\Views\FeedBack\" />
+    <Folder Include="Areas\Appointment\Views\Appointment\" />
+    <Folder Include="wwwroot\assets2\" />
+    <Folder Include="BAL\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Areas\" />
+    <None Remove="Areas\Service\" />
+    <None Remove="Areas\Stylist\" />
+    <None Remove="Areas\Appointment\" />
+    <None Remove="Areas\Feedback\" />
+    <None Remove="Areas\FAQs\" />
+    <None Remove="DAL\" />
+    <None Remove="DAL\Appointment\" />
+    <None Remove="DAL\FAQs\" />
+    <None Remove="DAL\Feedback\" />
+    <None Remove="DAL\Service\" />
+    <None Remove="DAL\Stylist\" />
+    <None Remove="Areas\Appointment\Models\" />
+    <None Remove="Areas\Appointment\Views\" />
+    <None Remove="Areas\Appointment\Controllers\" />
+    <None Remove="Areas\FAQs\Models\" />
+    <None Remove="Areas\FAQs\Views\" />
+    <None Remove="Areas\FAQs\Controllers\" />
+    <None Remove="Areas\Feedback\Models\" />
+    <None Remove="Areas\Feedback\Views\" />
+    <None Remove="Areas\Feedback\Controllers\" />
+    <None Remove="Areas\Service\Models\" />
+    <None Remove="Areas\Service\Views\" />
+    <None Remove="Areas\Service\Controllers\" />
+    <None Remove="Areas\Stylist\Models\" />
+    <None Remove="Areas\Stylist\Views\" />
+    <None Remove="Areas\Stylist\Controllers\" />
+    <None Remove="Areas\Service\Views\Service\" />
+    <None Remove="Areas\Stylist\Views\Stylist\" />
+    <None Remove="Areas\FAQs\Views\FAQs\" />
+    <None Remove="Areas\SEC_User\" />
+    <None Remove="Areas\SEC_User\Models\" />
+    <None Remove="Areas\SEC_User\Views\" />
+    <None Remove="Areas\SEC_User\Controllers\" />
+    <None Remove="Areas\SEC_User\Views\SEC_User\" />
+    <None Remove="DAL\SEC_User\" />
+    <None Remove="Areas\SEC_Admin\" />
+    <None Remove="Areas\SEC_Admin\Models\" />
+    <None Remove="Areas\SEC_Admin\Views\" />
+    <None Remove="Areas\SEC_Admin\Controllers\" />
+    <None Remove="Areas\SEC_Admin\Views\SEC_Admin\" />
+    <None Remove="Areas\Feedback\Views\FeedBack\" />
+    <None Remove="Areas\Appointment\Views\Appointment\" />
+    <None Remove="BAL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EnterpriseLibrary.Common.NetCore" Version="6.3.0" />
+    <PackageReference Include="EnterpriseLibrary.Data.NetCore" Version="6.3.2" />
+    <PackageReference Include="Microsoft.Practices.EnterpriseLibrary.2008" Version="4.1.0" />
+  </ItemGroup>
+</Project>

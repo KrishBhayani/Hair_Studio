@@ -1,0 +1,120 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using System.Data;
+@model DataTable;
+
+<main id="main" class="main">
+
+    <section class="section">
+        <div class="container-fluid d-flex justify-content-between">
+            <h3 class="fw-bold p-2"> Stylist List</h3>
+            <a type="button" class="btn btn-success" style="height: fit-content;align-self: center;" asp-area="Stylist" asp-controller="Stylist" asp-action="StylistAdd">
+                Add Stylist
+            </a>
+        </div>
+        <div class="card mt-2">
+            
+                <form class="row">
+                    <div class="card-body">
+                        <div class="mt-3"><h3>Filter</h3></div>
+
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div class="col-12 mt-2 ml-3">
+                            <input type="text" placeholder="Stylist Name" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="col-10 mt-3">
+                            <form>
+                                <button type="submit" class="btn btn-danger" runat="server" OnClientClick="this.form.reset();return false;">Clear</button>
+                            </form>
+                        </div>
+                    </div>
+                </form>
+       
+         </div>
+            <div>&nbsp;</div>
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <i class="bi bi-check-circle me-1"></i>
+                    @TempData["SuccessMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            <div>&nbsp;</div>
+            <div class="row align-items-top" id="sample_2">
+                @foreach (DataRow dataRow in Model.Rows)
+                {
+                    <div class="col-lg-4">
+                        <div class="row-lg-4">
+                            <div class="card">
+                                <img class="card-img-top" src=@dataRow["ImageURL"] style="object-fit:cover;" alt="Card image cap" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="column">
+                                            <p class="card-title fw-bold fs-4" style="margin-bottom: -15px">@dataRow["StylistName"]</p>
+                                        </div>
+                                        <div class="column">
+                                            <p class="card-text fw-bold fs-8" style="margin-bottom: -15px">@dataRow["ServiceName"]</p>
+                                        </div>
+                                        @*<div class="column">
+                                        <p class="card-text" style="font-size: small; margin-top: 10px">@dataRow["Phone"] </p>
+                                    </div>
+                                    <div class="column">
+                                        <p class="card-text" style="font-size: small; margin-top: 10px">@dataRow["Email"] </p>
+                                    </div>*@
+                                    </div>
+                                </div>
+
+                                <div class="card-body">
+
+                                    <a href="@Url.Action("StylistAdd", "Stylist", new { StylistID = @dataRow["StylistID"] })" class="btn btn-success" style="height: fit-content;">Edit</a>
+
+
+                                    <a href="@Url.Action("StylistDelete", "Stylist", new { StylistID = @dataRow["StylistID"] })" class="btn btn-danger" style="height: fit-content;" onclick="return fun1();">Delete</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+</section>
+
+</main>
+
+@section Scripts
+    {
+    <script>$(document).ready(function () {
+            $("#sample_1").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#sample_2 tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+        function fun1() {
+            if (confirm("Are you sure you want to delete?")) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }</script>
+
+    <script>$(document).ready(function () {
+            $("#inputAddress").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#sample_2 div").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });</script>
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

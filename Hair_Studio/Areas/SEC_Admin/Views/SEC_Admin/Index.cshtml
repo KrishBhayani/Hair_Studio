@@ -1,0 +1,131 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using Hair_Studio.Models;
+@using System.Data;
+@model DataTable
+<main id="main" class="main">
+
+    <!--Heading-->
+    <div class="pagetitle">
+        @*<a class="" asp-area="SEC_Admin" asp-controller="SEC_Admin" asp-action="Index"><i class="bi bi-arrow-left"></i></a>*@
+        <h3 class="title">Admin Dashboard</h3>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-area="SEC_Admin" asp-controller="SEC_Admin" asp-action="Index">Home</a></li>
+                <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
+        </nav>
+    </div><!-- End Page Title -->
+    <!--Heading-->
+    <!--Start DashBoard-->
+    <section class="section dashboard">
+        <div class="row">
+
+            <!-- Left side columns -->
+            <div class="col-lg-12">
+                <div class="row">
+
+
+                    <div class="col-xxl-4 col-md-4">
+                        <div class="card info-card sales-card">
+                            <a asp-area="Appointment" asp-controller="Appointment" asp-action="AppointmentList">
+                                <div class="card-body">
+                                    <h5 class="card-title">Appointment</h5>
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-person-add"></i>
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="mb-0">@Model.Rows[0]["AppointmentCount"]</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-4 col-md-4">
+                        <div class="card info-card sales-card">
+                            <a asp-area="Service" asp-controller="Service" asp-action="ServiceList">
+                                <div class="card-body">
+                                    <h5 class="card-title">Service</h5>
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-collection"></i>
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="mb-0">@Model.Rows[0]["ServiceCount"]</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-4 col-md-4">
+                        <div class="card info-card sales-card">
+                            <a asp-area="Service" asp-controller="Service" asp-action="ServiceList">
+                                <div class="card-body">
+                                    <h5 class="card-title">Stylist</h5>
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-person-video2"></i>
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="mb-0">@Model.Rows[0]["StylistCount"]</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-4 col-md-4">
+                        <div class="card info-card sales-card">
+                            <a asp-area="Feedback" asp-controller="Feedback" asp-action="FeedbackList">
+                                <div class="card-body">
+                                    <h5 class="card-title">Feedback</h5>
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-chat-left-text"></i>
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="mb-0">@Model.Rows[0]["FeedbackCount"]</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-4 col-md-4">
+                        <div class="card info-card sales-card">
+                            <a asp-area="FAQs" asp-controller="FAQs" asp-action="FAQsList">
+                                <div class="card-body">
+                                    <h5 class="card-title">FAQs</h5>
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-question-circle"></i>
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="mb-0">@Model.Rows[0]["FAQsCount"]</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>

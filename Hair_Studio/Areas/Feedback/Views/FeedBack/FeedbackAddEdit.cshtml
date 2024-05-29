@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewData["Title"] = "Feedback Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@model Hair_Studio.Areas.Feedback.Models.FeedbackModel
+
+<main id="main" class="main">
+
+    <div class="pagetitle">
+        <h1>Feedback</h1>
+
+    </div><!-- End Page Title -->
+
+    <section class="section contact">
+
+        <div class="row gy-4">
+
+
+
+            <div class="col-xl-12">
+                <div class="card p-4">
+                    <form method="post" asp-area="Feedback" asp-controller="Feedback" asp-action="FeedbackSave">
+                        @Html.HiddenFor(x => x.FeedbackID)
+                        <div class="row gy-4">
+                            <div class="col-md-6">
+
+                                <input type="text" asp-for="FirstName" class="form-control" placeholder="First Name " />
+                                <span asp-validation-for="FirstName" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="text" asp-for="LastName" class="form-control" placeholder="Last Name " />
+                                <span asp-validation-for="LastName" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <input type="text" asp-for="Email" class="form-control" placeholder="Your Mail " />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="text" asp-for="Phone" class="form-control" placeholder="Phone Number " />
+                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-12">
+
+                                <input type="text" asp-for="Rating" class="form-control" placeholder="Rating out of 5 " />
+                                <span asp-validation-for="Rating" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-12">
+
+                                <input type="text" asp-for="Comments" class="form-control" placeholder="Comments " />
+                                <span asp-validation-for="Comments" class="text-danger"></span>
+                            </div>
+
+
+                            <br />
+                            <div>
+
+                                <button type="submit" class="btn btn-primary">Save</button>
+                                <a class="btn btn-danger" asp-area="Feedback" asp-controller="Feedback" asp-action="FeedbackList">Back</a>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main><!-- End #main -->
+@section Scripts
+    {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

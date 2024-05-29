@@ -1,0 +1,177 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Hair_Studio
+build_property.RootNamespace = Hair_Studio
+build_property.ProjectDir = /Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/LENOVO/Desktop/Hair_Studio/Hair_Studio
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/Appointment/Views/Appointment/AppointmentAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQXBwb2ludG1lbnQvVmlld3MvQXBwb2ludG1lbnQvQXBwb2ludG1lbnRBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/Appointment/Views/Appointment/AppointmentList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQXBwb2ludG1lbnQvVmlld3MvQXBwb2ludG1lbnQvQXBwb2ludG1lbnRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/Appointment/Views/Appointment/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQXBwb2ludG1lbnQvVmlld3MvQXBwb2ludG1lbnQvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/Appointment/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQXBwb2ludG1lbnQvVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/FAQs/Views/FAQs/FAQsAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRkFRcy9WaWV3cy9GQVFzL0ZBUXNBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/FAQs/Views/FAQs/FAQsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRkFRcy9WaWV3cy9GQVFzL0ZBUXNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/FAQs/Views/FAQs/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRkFRcy9WaWV3cy9GQVFzL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/FAQs/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRkFRcy9WaWV3cy9fVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/Feedback/Views/FeedBack/FeedbackAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRmVlZGJhY2svVmlld3MvRmVlZEJhY2svRmVlZGJhY2tBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/Feedback/Views/FeedBack/FeedbackList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRmVlZGJhY2svVmlld3MvRmVlZEJhY2svRmVlZGJhY2tMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/Feedback/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRmVlZGJhY2svVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/SEC_Admin/Views/SEC_Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU0VDX0FkbWluL1ZpZXdzL1NFQ19BZG1pbi9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/SEC_Admin/Views/SEC_Admin/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU0VDX0FkbWluL1ZpZXdzL1NFQ19BZG1pbi9fVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/SEC_Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU0VDX0FkbWluL1ZpZXdzL19WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/SEC_User/Views/SEC_User/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU0VDX1VzZXIvVmlld3MvU0VDX1VzZXIvQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/SEC_User/Views/SEC_User/Blog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU0VDX1VzZXIvVmlld3MvU0VDX1VzZXIvQmxvZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/SEC_User/Views/SEC_User/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU0VDX1VzZXIvVmlld3MvU0VDX1VzZXIvQ29udGFjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/SEC_User/Views/SEC_User/Gallery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU0VDX1VzZXIvVmlld3MvU0VDX1VzZXIvR2FsbGVyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/SEC_User/Views/SEC_User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU0VDX1VzZXIvVmlld3MvU0VDX1VzZXIvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/SEC_User/Views/SEC_User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU0VDX1VzZXIvVmlld3MvU0VDX1VzZXIvTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/SEC_User/Views/SEC_User/Services.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU0VDX1VzZXIvVmlld3MvU0VDX1VzZXIvU2VydmljZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/SEC_User/Views/SEC_User/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU0VDX1VzZXIvVmlld3MvU0VDX1VzZXIvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/SEC_User/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU0VDX1VzZXIvVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/Service/Views/Service/ServiceAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU2VydmljZS9WaWV3cy9TZXJ2aWNlL1NlcnZpY2VBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/Service/Views/Service/ServiceList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU2VydmljZS9WaWV3cy9TZXJ2aWNlL1NlcnZpY2VMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/Service/Views/Service/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU2VydmljZS9WaWV3cy9TZXJ2aWNlL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/Service/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU2VydmljZS9WaWV3cy9fVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/Stylist/Views/Stylist/StylistAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU3R5bGlzdC9WaWV3cy9TdHlsaXN0L1N0eWxpc3RBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/Stylist/Views/Stylist/StylistList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU3R5bGlzdC9WaWV3cy9TdHlsaXN0L1N0eWxpc3RMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/Stylist/Views/Stylist/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU3R5bGlzdC9WaWV3cy9TdHlsaXN0L19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Areas/Stylist/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvU3R5bGlzdC9WaWV3cy9fVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Views/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Views/Shared/_UserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Vc2VyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/LENOVO/Desktop/Hair_Studio/Hair_Studio/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-9vc6exqewe
